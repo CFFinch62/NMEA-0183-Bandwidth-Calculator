@@ -12,3 +12,15 @@ It was created with monolithic program files for each version. this project was 
 - Support for various update rates (0.5Hz to 20Hz)
 - Hlpe files appropriate for each verison.
 
+
+*** NOTES ***
+
+While did attempt to create a fairly full and robust list of NMEA 0183 sentences in the json file, it is by no means a complete list of all that is out there.
+The NMEA 0183 specifcaiton goes back to 1983 (inception, 1987 first official standard). There have been approx 8 updates since. 
+The cost of purchasing the spec docs is astronomical so i di my best from what I could get off the Internet.
+Having said that, the sentcen details are accurate with the exception of the standards details. I had great ambition when starting but it was too labor intensive for me.
+Edit the data as you see fit for your needs. My larger NMEA 0183 Toolkit project ( as of yet unreleased) has a database editor buitl in to make chnages easier.
+You could add one yourself if you like.
+
+I have spent 39 years in the marine electroncis industry using NMEA 0183 a lot. I have built many tools for it and other purposes in the industry.
+I will post more projects in the weeks/months to come and let everyone have at it.
