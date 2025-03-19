@@ -1,0 +1,2530 @@
+{
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2024-03-21"
+    },
+    "sentences": {
+        "AAM": {
+            "total_chars": 26,
+            "num_fields": 5,
+            "chars_per_field": [
+                1,
+                1,
+                3,
+                1,
+                4
+            ],
+            "field_names": [
+                "Arrival Circle Status",
+                "Perpendicular Pass Status",
+                "Arrival Circle Radius",
+                "Radius Units",
+                "Waypoint ID"
+            ],
+            "sentence_name": "Waypoint Arrival Alarm",
+            "sentence_structure": "$--AAM,A,A,x.x,N,c--c*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "ABK": {
+            "total_chars": 37,
+            "num_fields": 5,
+            "chars_per_field": [
+                9,
+                1,
+                3,
+                1,
+                1
+            ],
+            "field_names": [
+                "MMSI",
+                "AIS Channel",
+                "Message ID",
+                "Message Seq. No.",
+                "ACK Type"
+            ],
+            "sentence_name": "UAIS Addressed and Binary Broadcast Acknowlwdgement",
+            "sentence_structure": "$--ABK,xxxxxxxxx,a,x.x,x,x*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "ACA": {
+            "total_chars": 79,
+            "num_fields": 19,
+            "chars_per_field": [
+                1,
+                7,
+                1,
+                7,
+                1,
+                7,
+                1,
+                7,
+                1,
+                1,
+                4,
+                1,
+                4,
+                1,
+                1,
+                1,
+                1,
+                1,
+                9
+            ],
+            "field_names": [
+                "Seq. No,",
+                "NW Corner Lat.",
+                "N/S",
+                "NW Corner Long.",
+                "E/W",
+                "SW Corner Lat.",
+                "N/S",
+                "SW Corner Long.",
+                "E/W",
+                "Transition Zone Size",
+                "Channel A",
+                "Channel A Bandwidth",
+                "Channel B",
+                "Channel B Bandwidth",
+                "TX/RX Mode Control",
+                "Power Level Control",
+                "Information Source",
+                "In-Use Flag",
+                "Time of In-Use Change"
+            ],
+            "sentence_name": "UAIS Regional Channel Assignment Message",
+            "sentence_structure": "$--ACA,x,llll.ll,a,yyyyy.yy,a,llll.ll,a,yyyyy.yy,a,x,xxxx,x,xxxx,x,x,x,a,x,hhmmss.ss*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "ACK": {
+            "total_chars": 15,
+            "num_fields": 1,
+            "chars_per_field": [
+                3
+            ],
+            "field_names": [
+                "Unique Alarm Number"
+            ],
+            "sentence_name": "Acknowledge Alarm",
+            "sentence_structure": "$--ACK,xxx*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "ACS": {
+            "total_chars": 44,
+            "num_fields": 6,
+            "chars_per_field": [
+                1,
+                9,
+                9,
+                2,
+                2,
+                4
+            ],
+            "field_names": [
+                "Seq. No.",
+                "MMSI",
+                "UTC",
+                "Day",
+                "Month",
+                "Year"
+            ],
+            "sentence_name": "UAIS Channel Management Information Service",
+            "sentence_structure": "$--ACS,x,xxxxxxxxx,hhmmss.ss,xx,xx,xxxx*hh<CR><LF>",
+            "standard": "B",
+            "version": {
+                "nmea": [
+                    "3.01",
+                    "4.11"
+                ],
+                "iec": [
+                    "61162-1"
+                ]
+            }
+        },
+        "AIR": {
+            "total_chars": 49,
+            "num_fields": 8,
+            "chars_per_field": [
+                9,
+                3,
+                1,
+                3,
+                1,
+                9,
+                3,
+                1
+            ],
+            "field_names": [
+                "MMSI-1",
+                "Message-1 Requested1-1",
+                "Requested1-1 Sub-Section",
+                "Message-1 Requested1-2",
+                "Requested1-2 Sub-Section",
+                "MMSI2",
+                "Message2-1 Requested ",
+                "Requested2-1 Sub-Section"
+            ],
+            "sentence_name": "UAIS Interrogation Request",
+            "sentence_structure": "$--AIR,xxxxxxxxx,x.x,x,x.x,x,xxxxxxxxx,x.x,x*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": [
+                    "61162-1"
+                ]
+            }
+        },
+        "ALM": {
+            "total_chars": 85,
+            "num_fields": 15,
+            "chars_per_field": [
+                3,
+                3,
+                2,
+                3,
+                2,
+                4,
+                2,
+                4,
+                4,
+                6,
+                6,
+                6,
+                6,
+                3,
+                3
+            ],
+            "field_names": [
+                "No. of Sentences",
+                "Seq. No.",
+                "Sat. PRN",
+                "GPS Week",
+                "SV Health",
+                "Eccentricity",
+                "Almanac Ref. Time",
+                "Inclination Angle",
+                "Rate of Ascension",
+                "Root of Semi-Major Axis",
+                "Argument of Perigee",
+                "Long. og Ascension",
+                "Mean Anomaly",
+                "aF0 Clock Parameter",
+                "aF1 Clock Parameter"
+            ],
+            "sentence_name": "GPS Almanac Data",
+            "sentence_structure": "$--ALM,x.x,x.x,xx,x.x,hh,hhhh,hh,hhhh,hhhh,hhhhhh,hhhhhh,hhhhhh,hhhhhh,hhh,hhh*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "ALR": {
+            "total_chars": 34,
+            "num_fields": 5,
+            "chars_per_field": [
+                9,
+                3,
+                1,
+                1,
+                4
+            ],
+            "field_names": [
+                "UTC Time of Alarm Condition Change",
+                "Unique Alarm No.",
+                "Alarm Condition",
+                "Alarm ACK State",
+                "Alarm Desc."
+            ],
+            "sentence_name": "Set Alarm State",
+            "sentence_structure": "$--ALR,hhmmss.ss,xxx,A,A,c--c*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "APA": {
+            "total_chars": 40,
+            "num_fields": 10,
+            "chars_per_field": [
+                1,
+                1,
+                4,
+                1,
+                1,
+                1,
+                1,
+                3,
+                1,
+                5
+            ],
+            "field_names": [
+                "Loran-C Blink/SNR Warning Flag",
+                "Loran-C Cycle Lock Warning Flag",
+                "Cross Track Error Magnitude",
+                "Direction to Steer",
+                "Cross Track Units",
+                "Arrival Circle Entered",
+                "Perpendicular Passed at Waypoint",
+                "Bearing Origin to Destination",
+                "Magnetic or True",
+                "Destination Waypoint ID"
+            ],
+            "sentence_name": "Autopilot Sentence \"A\"",
+            "sentence_structure": "$--APA,A,A,x.xx,L,N,A,A,xxx,M,c---c*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "APB": {
+            "total_chars": 52,
+            "num_fields": 14,
+            "chars_per_field": [
+                1,
+                1,
+                3,
+                1,
+                1,
+                1,
+                1,
+                3,
+                1,
+                4,
+                3,
+                1,
+                3,
+                1
+            ],
+            "field_names": [
+                "LoranC Blink or SNR status",
+                "LoranC Cycle Lock Status",
+                "XTE",
+                "L/R to Steer",
+                "XTE Units",
+                "Arrival Circle Entered",
+                "Perpendicular Passed",
+                "BRG - Origin to Destination",
+                "Mag/True",
+                "Waypoint ID",
+                "BRG - PP to Dest.",
+                "M/T",
+                "HDG to Steer to Dest.",
+                "M/T"
+            ],
+            "sentence_name": "Heading/Track Controller (Autopilot) Sentence B",
+            "sentence_structure": "$--APB,A,A,x.x,a,N,A,A,x.x,a,cGPc,x.x,a,x.x,a,a*hh<CR><LF>",
+            "standard": "B",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "4.11"
+                ],
+                "iec": [
+                    "5.0"
+                ]
+            }
+        },
+        "BEC": {
+            "total_chars": 65,
+            "num_fields": 11,
+            "chars_per_field": [
+                9,
+                7,
+                1,
+                7,
+                1,
+                3,
+                1,
+                3,
+                1,
+                3,
+                1
+            ],
+            "field_names": [
+                "UTC",
+                "WPT Lat.",
+                "N/S",
+                "WPT Long.",
+                "E/W",
+                "BRG",
+                "M",
+                "Distamce",
+                "NM",
+                "",
+                ""
+            ],
+            "sentence_name": "Bearing & Distance to Waypoint - Dead Reckoning",
+            "sentence_structure": "$--BEC,hhmmss.ss,llll.ll,a,yyyyy.yy,a,x.x,T,x.x,M,x.x,N,c--c*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "BOD": {
+            "total_chars": 33,
+            "num_fields": 6,
+            "chars_per_field": [
+                3,
+                1,
+                3,
+                1,
+                4,
+                4
+            ],
+            "field_names": [
+                "BRG",
+                "T",
+                "BRG",
+                "M",
+                "Dest. WPT ID",
+                "Origin WPT ID"
+            ],
+            "sentence_name": "Bearing - Origin to Destination",
+            "sentence_structure": "$--BOD,x.x,T,x.x,M,c--c,c--c*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "BWC": {
+            "total_chars": 67,
+            "num_fields": 12,
+            "chars_per_field": [
+                9,
+                7,
+                1,
+                7,
+                1,
+                3,
+                1,
+                3,
+                1,
+                3,
+                1,
+                4,
+                1
+            ],
+            "field_names": [
+                "UTC",
+                "WPT Lat.",
+                "N/S",
+                "WPT Long.",
+                "E/W",
+                "BRG",
+                "T",
+                "BRG",
+                "M",
+                "Distance",
+                "NM",
+                "WPT ID"
+            ],
+            "sentence_name": "Bearing & Distance to Waypoint - Great Circle",
+            "sentence_structure": "$--BWC,hhmmss.ss,llll.ll,a,yyyyy.yy,a,x.x,T,x.x,M,x.x,N,c--c*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "BWR": {
+            "total_chars": 67,
+            "num_fields": 12,
+            "chars_per_field": [
+                9,
+                7,
+                1,
+                7,
+                1,
+                3,
+                1,
+                3,
+                1,
+                3,
+                1,
+                4,
+                1
+            ],
+            "field_names": [
+                "UTC",
+                "WPT Lat.",
+                "N/S",
+                "WPT Long.",
+                "E/W",
+                "BRG",
+                "T",
+                "BRG",
+                "M",
+                "Distance",
+                "NM",
+                "WPT ID"
+            ],
+            "sentence_name": "Bearing & Distance to Waypoint - Rhumb Line",
+            "sentence_structure": "$--BWR,hhmmss.ss,llll.ll,a,yyyyy.yy,a,x.x,T,x.x,M,x.x,N,c--c*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "BWW": {
+            "total_chars": 33,
+            "num_fields": 6,
+            "chars_per_field": [
+                3,
+                1,
+                3,
+                1,
+                4,
+                4
+            ],
+            "field_names": [
+                "BRG",
+                "T",
+                "BRG",
+                "M",
+                "TO WPT ID",
+                "FROM WPT ID"
+            ],
+            "sentence_name": "Bearing - Waypoint to Waypoint",
+            "sentence_structure": "$--BWW,x.x,T,x.x,M,c--c,c--c*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "DBK": {
+            "total_chars": 29,
+            "num_fields": 6,
+            "chars_per_field": [
+                3,
+                1,
+                3,
+                1,
+                3,
+                1
+            ],
+            "field_names": [
+                "Depth in Feet",
+                "Depth in Meters",
+                "Depth in Fathoms"
+            ],
+            "sentence_name": "Depth Below Keel",
+            "sentence_structure": "$--DBK,x.x,f,x.x,M,x.x,F*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "DBS": {
+            "total_chars": 29,
+            "num_fields": 6,
+            "chars_per_field": [
+                3,
+                1,
+                3,
+                1,
+                3,
+                1
+            ],
+            "field_names": [
+                "Depth, feet",
+                "Depth, meters",
+                "Depth, Fathoms"
+            ],
+            "sentence_name": "Depth Below Surface",
+            "sentence_structure": "$--DBS,x.x,f,x.x,M,x.x,F*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "DBT": {
+            "total_chars": 29,
+            "num_fields": 6,
+            "chars_per_field": [
+                3,
+                1,
+                3,
+                1,
+                3,
+                1
+            ],
+            "field_names": [
+                "Depth",
+                "f(feet)",
+                "Depth",
+                "m(Meters)",
+                "Depth",
+                "F(fathoms)"
+            ],
+            "sentence_name": "Depth Below Transducer",
+            "sentence_structure": "$--DBT,x.x,f,x.x,M,x.x,F*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "DCN": {
+            "total_chars": 55,
+            "num_fields": 16,
+            "chars_per_field": [
+                2,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                1,
+                1,
+                1,
+                3,
+                1,
+                1
+            ],
+            "field_names": [
+                "Chain",
+                "Red Zone ID",
+                "Red LOP",
+                "Red Master Status",
+                "Green Zone ID",
+                "Green LOP",
+                "Green Master Status",
+                "Purple Zone ID",
+                "Purple LOP",
+                "Purple Master Status",
+                "Red Line Use",
+                "Green Line Use",
+                "Purple Line Use",
+                "Position Uncertainty",
+                "NM",
+                "Fix Data Basis"
+            ],
+            "sentence_name": "Decca Position",
+            "sentence_structure": "$--DCN,xx,cc,x.x,A,cc,x.x,A,cc,x.x,A,A,A,A,x.x,N,x*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.01",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "DPT": {
+            "total_chars": 19,
+            "num_fields": 2,
+            "chars_per_field": [
+                3,
+                3
+            ],
+            "field_names": [
+                "Depth ()",
+                "Offset"
+            ],
+            "sentence_name": "Depth",
+            "sentence_structure": "$--DPT,x.x,x.x*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "FSI": {
+            "total_chars": 29,
+            "num_fields": 4,
+            "chars_per_field": [
+                6,
+                6,
+                1,
+                1
+            ],
+            "field_names": [
+                "TX Freq.",
+                "RX Freq.",
+                "Mode",
+                "Power Level"
+            ],
+            "sentence_name": "FSI - Frequency Set Information",
+            "sentence_structure": "$--FSI,xxxxxx,xxxxxx,c,x*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "GBS": {
+            "total_chars": 49,
+            "num_fields": 8,
+            "chars_per_field": [
+                9,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3
+            ],
+            "field_names": [
+                "UTC Time of Fix",
+                "Expected 1-sigma Error in Latitude",
+                "Expected 1-sigma error in longitude (meters)",
+                "Expected 1-sigma error in altitude (meters)",
+                "ID of most likely failed satellite (1 to 138)",
+                "Probability of missed detection for most likely failed satellite",
+                "Estimate of bias in meters on most likely failed satellite",
+                "Standard deviation of bias estimate"
+            ],
+            "sentence_name": "GPS Satellite Fault Detection",
+            "sentence_structure": "$--GBS,hhmmss.ss,x.x,x.x,x.x,x.x,x.x,x.x,x.x*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "GGA": {
+            "total_chars": 82,
+            "num_fields": 14,
+            "chars_per_field": [
+                9,
+                7,
+                1,
+                7,
+                1,
+                1,
+                2,
+                3,
+                3,
+                1,
+                3,
+                1,
+                3,
+                4
+            ],
+            "field_names": [
+                "UTC Time",
+                "Latitude",
+                "N/S",
+                "Longitude",
+                "E/W",
+                "GPS Quality",
+                "No. of Satellites",
+                "HDOP",
+                "Altitude",
+                "M",
+                "Geoidal Sep.",
+                "M",
+                "Age of Diff. Corr.",
+                "Diff. Ref. Station ID"
+            ],
+            "sentence_name": "Global Positioning System Fix Data",
+            "sentence_structure": "$--GGA,hhmmss.ss,llll.ll,a,yyyyy.yy,a,x,xx,x.x,x.x,M,x.x,M,x.x,xxxx*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "GLC": {
+            "total_chars": 52,
+            "num_fields": 13,
+            "chars_per_field": [
+                4,
+                3,
+                1,
+                3,
+                1,
+                3,
+                3,
+                1,
+                1,
+                3,
+                1,
+                3,
+                1
+            ],
+            "field_names": [
+                "GRI Microseconds/10",
+                "Master TOA Microseconds",
+                "Master TOA Signal Status",
+                "Time Difference 1 Microseconds",
+                "Time Difference 1 Signal Status",
+                "Time Difference 2 Microseconds",
+                "Time Difference 2 Signal Status",
+                "Time Difference 3 Microseconds",
+                "Time Difference 3 Signal Status",
+                "Time Difference 4 Microseconds",
+                "Time Difference 4 Signal Status",
+                "Time Difference 5 Microseconds",
+                "Time Difference 5 Signal Status"
+            ],
+            "sentence_name": "Geographic Position, Loran-C",
+            "sentence_structure": "$--GLC,xxxx,x.x,a,x.x,a,x.x,a.x,x,a,x.x,a,x.x,a*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "GLL": {
+            "total_chars": 44,
+            "num_fields": 7,
+            "chars_per_field": [
+                9,
+                7,
+                1,
+                7,
+                1,
+                9,
+                1
+            ],
+            "field_names": [
+                "Latitude",
+                "N/S",
+                "Longitude",
+                "E/W",
+                "UTC Time",
+                "Status",
+                "Mode"
+            ],
+            "sentence_name": "Geographic Position - Latitude/Longitude",
+            "sentence_structure": "$--GLL,llll.ll,a,yyyyy.yy,a,hhmmss.ss,A,a*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "GSA": {
+            "total_chars": 55,
+            "num_fields": 19,
+            "chars_per_field": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                3,
+                3,
+                3
+            ],
+            "field_names": [
+                "Selection mode: M=Manual, forced to operate in 2D or 3D, A=Automatic, 2D/3D",
+                "Mode (1 = no fix, 2 = 2D fix, 3 = 3D fix)",
+                "ID of 1st satellite used for fix",
+                "ID of 2nd satellite used for fix",
+                "ID of 3rd satellite used for fix",
+                "ID of 4th satellite used for fix",
+                "ID of 5th satellite used for fix",
+                "ID of 6th satellite used for fix",
+                "ID of 7th satellite used for fix",
+                "ID of 8th satellite used for fix",
+                "ID of 9th satellite used for fix",
+                "ID of 10th satellite used for fix",
+                "ID of 11th satellite used for fix",
+                "ID of 12th satellite used for fix",
+                "PDOP",
+                "HDOP",
+                "VDOP"
+            ],
+            "sentence_name": "GPS DOP and active satellites",
+            "sentence_structure": "$--GSA,a,a,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x.x,x.x,x.x*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "GSV": {
+            "total_chars": 29,
+            "num_fields": 8,
+            "chars_per_field": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                3
+            ],
+            "field_names": [
+                "total number of GSV sentences to be transmitted",
+                "Sentence number, 1-9 of this GSV message",
+                "total number of satellites in view",
+                "satellite ID or PRN number",
+                "elevation in degrees (-90 to 90)",
+                "azimuth in degrees to true north (000 to 359)",
+                "SNR / Signal ID (NMEA 4.11) n)",
+                "GTD - Geographic Location in Time Differences",
+                "$--GTD,x.x,x.x,x.x,x.x,x.x*hh<CR><LF>",
+                "time difference",
+                "time difference",
+                "time difference",
+                "time difference",
+                "time difference n)"
+            ],
+            "sentence_name": "Satellites in view",
+            "sentence_structure": "$--GSV,x,x,x,x,x,x,x,...*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "GXA": {
+            "total_chars": 49,
+            "num_fields": 7,
+            "chars_per_field": [
+                9,
+                7,
+                1,
+                8,
+                1,
+                4,
+                1
+            ],
+            "field_names": [
+                "UTC of position fix, hh is hours, mm is minutes, ss.ss is seconds.",
+                "Latitude, dd is degrees, mm.mm is minutes",
+                "East or West",
+                "Longitude, dd is degrees, mm.mm is minutes",
+                "North or South",
+                "Waypoint ID",
+                "Satellite number"
+            ],
+            "sentence_name": "TRANSIT Position",
+            "sentence_structure": "$--GXA,hhmmss.ss,ddmm.mm,a,dddmm.mm,a,c--c,X*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "HDG": {
+            "total_chars": 27,
+            "num_fields": 5,
+            "chars_per_field": [
+                3,
+                3,
+                1,
+                3,
+                1
+            ],
+            "field_names": [
+                "Magnetic Sensor heading in degrees",
+                "Magnetic Deviation, degrees",
+                "Magnetic Deviation direction, E = Easterly, W = Westerly",
+                "Magnetic Variation degrees",
+                "Magnetic Variation direction, E = Easterly, W = Westerly"
+            ],
+            "sentence_name": "Heading",
+            "sentence_structure": "$--HDG,x.x,x.x,a,x.x,a*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "HDM": {
+            "total_chars": 17,
+            "num_fields": 2,
+            "chars_per_field": [
+                3,
+                1
+            ],
+            "field_names": [
+                "Heading Degrees, magnetic"
+            ],
+            "sentence_name": "Heading",
+            "sentence_structure": "$--HDM,x.x,M*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "HDT": {
+            "total_chars": 17,
+            "num_fields": 2,
+            "chars_per_field": [
+                3,
+                1
+            ],
+            "field_names": [
+                "Heading, degrees True"
+            ],
+            "sentence_name": "Heading",
+            "sentence_structure": "$--HDT,x.x,T*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "HFB": {
+            "total_chars": 23,
+            "num_fields": 4,
+            "chars_per_field": [
+                3,
+                1,
+                3,
+                1
+            ],
+            "field_names": [
+                "Distance from headrope to footrope",
+                "Meters (0-100)",
+                "Distance from headrope to bottom",
+                "Meters (0-100)"
+            ],
+            "sentence_name": "Trawl Headrope to Footrope and Bottom",
+            "sentence_structure": "$--HFB,x.x,M,y.y,M*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "HSC": {
+            "total_chars": 23,
+            "num_fields": 4,
+            "chars_per_field": [
+                3,
+                1,
+                3,
+                1
+            ],
+            "field_names": [
+                "Heading Degrees, True",
+                "Heading Degrees, Magnetic"
+            ],
+            "sentence_name": "Heading Steering Command",
+            "sentence_structure": "$--HSC,x.x,T,x.x,M*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "ITS": {
+            "total_chars": 17,
+            "num_fields": 2,
+            "chars_per_field": [
+                3,
+                1
+            ],
+            "field_names": [
+                "Second spread distance",
+                "Meters"
+            ],
+            "sentence_name": "Trawl Door Spread 2 Distance",
+            "sentence_structure": "$--ITS,x.x,M*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "LCD": {
+            "total_chars": 64,
+            "num_fields": 13,
+            "chars_per_field": [
+                4,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3
+            ],
+            "field_names": [
+                "GRI Microseconds/10",
+                "Master Relative SNR",
+                "Master Relative ECD",
+                "Time Difference 1 Microseconds",
+                "Time Difference 1 Signal Status",
+                "Time Difference 2 Microseconds",
+                "Time Difference 2 Signal Status",
+                "Time Difference 3 Microseconds",
+                "Time Difference 3 Signal Status",
+                "Time Difference 4 Microseconds",
+                "Time Difference 4 Signal Status",
+                "Time Difference 5 Microseconds",
+                "Time Difference 5 Signal Status"
+            ],
+            "sentence_name": "Loran-C Signal Data",
+            "sentence_structure": "$--LCD,xxxx,xxx,xxx,xxx,xxx,xxx,xxx,xxx,xxx,xxx,xxx,xxx,xxx*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "MDA": {
+            "total_chars": 72,
+            "num_fields": 19,
+            "chars_per_field": [
+                4,
+                1,
+                5,
+                1,
+                3,
+                1,
+                3,
+                3,
+                1,
+                3,
+                1,
+                3,
+                1,
+                3,
+                1,
+                3,
+                1,
+                3,
+                1
+            ],
+            "field_names": [
+                "Barometric pressure, inches of mercury, to the nearest 0.01 inch",
+                "I = inches of mercury",
+                "Barometric pressure, bars, to the nearest .001 bar",
+                "B = bars",
+                "Air temperature, degrees C, to the nearest 0.1 degree C",
+                "C = degrees C",
+                "Water temperature, degrees C (this field left blank by WeatherStation)",
+                "C = degrees C",
+                "Relative humidity, percent, to the nearest 0.1 percent",
+                "Absolute humidity, percent",
+                "Dew point, degrees C, to the nearest 0.1 degree C",
+                "C = degrees C",
+                "Wind direction, degrees True, to the nearest 0.1 degree",
+                "Wind direction, degrees Magnetic, to the nearest 0.1 degree",
+                "Wind speed, knots, to the nearest 0.1 knot",
+                "Wind speed, meters per second, to the nearest 0.1 m/s"
+            ],
+            "sentence_name": "Meteorological Composite",
+            "sentence_structure": "$--MDA,n.nn,I,n.nnn,B,n.n,C,n.C,n.n,n,n.n,C,n.n,T,n.n,M,n.n,N,n.n,M*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "MSK": {
+            "total_chars": 27,
+            "num_fields": 5,
+            "chars_per_field": [
+                3,
+                1,
+                3,
+                1,
+                3
+            ],
+            "field_names": [
+                "Beacon frequency to use, 283.5-325.0 kHz",
+                "Frequency mode, A=auto, M=manual",
+                "Beacon bit rate (25, 50, 100, 200)",
+                "Bitrate, A=auto, M=manual",
+                "Interval for MSS message status (null for no status), seconds"
+            ],
+            "sentence_name": "Control for a Beacon Receiver",
+            "sentence_structure": "$--MSK,nnn,m,nnn,m,nnn*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "MSS": {
+            "total_chars": 29,
+            "num_fields": 5,
+            "chars_per_field": [
+                2,
+                2,
+                3,
+                3,
+                3
+            ],
+            "field_names": [
+                "Signal strength (dB 1uV)",
+                "Signal to noise ratio (dB)",
+                "Beacon frequency,283.5-325.0 kHz",
+                "Beacon data rate, 25, 50, 100, 200 bps",
+                "Channel number"
+            ],
+            "sentence_name": "Beacon Receiver Status",
+            "sentence_structure": "$--MSS,nn,nn,fff,bbb,xxx*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "MTW": {
+            "total_chars": 15,
+            "num_fields": 2,
+            "chars_per_field": [
+                3,
+                1
+            ],
+            "field_names": [
+                "Temperature",
+                "Unit (C)"
+            ],
+            "sentence_name": "Water Temperature",
+            "sentence_structure": "$--MTW,x.x,C*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "MWV": {
+            "total_chars": 23,
+            "num_fields": 4,
+            "chars_per_field": [
+                3,
+                1,
+                3,
+                1
+            ],
+            "field_names": [
+                "Wind Angle, 0 to 359 degrees",
+                "Reference, R = Relative, T = True",
+                "Wind Speed",
+                "Wind Speed Units, K/M/",
+                "Status, A = Data Valid, V = Invalid"
+            ],
+            "sentence_name": "Wind Speed and Angle",
+            "sentence_structure": "$--MWV,x.x,a,x.x,a*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "OLN": {
+            "total_chars": 44,
+            "num_fields": 9,
+            "chars_per_field": [
+                2,
+                3,
+                3,
+                2,
+                3,
+                3,
+                2,
+                3,
+                3
+            ],
+            "field_names": [
+                "Omega Pair 1",
+                "Omega Pair 2",
+                "Omega Pair 3"
+            ],
+            "sentence_name": "Omega Lane Numbers",
+            "sentence_structure": "$--OLN,aa,xxx,xxx,aa,xxx,xxx,aa,xxx,xxx*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "OSD": {
+            "total_chars": 39,
+            "num_fields": 9,
+            "chars_per_field": [
+                3,
+                1,
+                3,
+                1,
+                3,
+                1,
+                3,
+                3,
+                1
+            ],
+            "field_names": [
+                "Heading, degrees True",
+                "Status, A = Data Valid, V = Invalid",
+                "Vessel Course, degrees True",
+                "Course Reference B/M/W/R/P",
+                "Vessel Speed",
+                "Speed Reference B/M/W/R/P",
+                "Vessel Set, degrees True",
+                "Vessel drift (speed)",
+                "Speed Units K/N"
+            ],
+            "sentence_name": "Own Ship Data",
+            "sentence_structure": "$--OSD,x.x,A,x.x,a,x.x,a,x.x,x.x,a*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "R00": {
+            "total_chars": 28,
+            "num_fields": 3,
+            "chars_per_field": [
+                5,
+                5,
+                4
+            ],
+            "field_names": [
+                "waypoint ID (1-99)"
+            ],
+            "sentence_name": "Waypoints in active route",
+            "sentence_structure": "$--R00,c---c,c---c,....*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "RMA": {
+            "total_chars": 56,
+            "num_fields": 11,
+            "chars_per_field": [
+                1,
+                7,
+                1,
+                8,
+                1,
+                3,
+                3,
+                3,
+                3,
+                3,
+                1
+            ],
+            "field_names": [
+                "Status, A = Valid, V = Invalid",
+                "Latitude",
+                "N or S",
+                "Longitude",
+                "E or W",
+                "Time Difference A, uS",
+                "Time Difference B, uS",
+                "Speed Over Ground, Knots",
+                "Track Made Good, degrees True",
+                "Magnetic Variation, degrees",
+                "E or W"
+            ],
+            "sentence_name": "Recommended Minimum Navigation Information",
+            "sentence_structure": "$--RMA,A,llll.ll,a,yyyyy.yy,a,x.x,x.x,x.x,x.x,x.x,a*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "RMB": {
+            "total_chars": 75,
+            "num_fields": 14,
+            "chars_per_field": [
+                1,
+                3,
+                1,
+                4,
+                4,
+                7,
+                1,
+                7,
+                1,
+                3,
+                3,
+                3,
+                1,
+                1
+            ],
+            "field_names": [
+                "Status",
+                "XTE",
+                "Dir to Steer",
+                "Origin WPT ID",
+                "Dest. WPT ID",
+                "Dest. Lat.",
+                "N/S",
+                "Dest. Long.",
+                "E/W",
+                "Range",
+                "Bearing",
+                "Velocity",
+                "Arrival Status",
+                "FAA Mode"
+            ],
+            "sentence_name": "Recommended Minimum Navigation Information",
+            "sentence_structure": "$--RMB,A,x.x,a,cGPc,cGPc,llll.ll,a,yyyyy.yy,a,x.x,x.x,x.x,A,a*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "RMC": {
+            "total_chars": 65,
+            "num_fields": 13,
+            "chars_per_field": [
+                9,
+                1,
+                7,
+                1,
+                7,
+                1,
+                3,
+                3,
+                6,
+                3,
+                1,
+                1,
+                1
+            ],
+            "field_names": [
+                "UTC Time",
+                "Status",
+                "Latitude",
+                "N/S",
+                "Longitude",
+                "E/W",
+                "Speed Over Ground",
+                "Course Over Ground",
+                "Date",
+                "Magnetic Variation",
+                "E/W",
+                "Mode",
+                "Nav Status"
+            ],
+            "sentence_name": "Recommended Minimum Specific GNSS Data",
+            "sentence_structure": "$--RMC,hhmmss.ss,A,llll.ll,a,yyyyy.yy,a,x.x,x.x,xxxxxx,x.x,a,a*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "ROT": {
+            "total_chars": 17,
+            "num_fields": 2,
+            "chars_per_field": [
+                3,
+                1
+            ],
+            "field_names": [
+                "Rate Of Turn, degrees per minute, \"-\" means bow turns to port",
+                "Status, A means data is valid"
+            ],
+            "sentence_name": "Rate Of Turn",
+            "sentence_structure": "$--ROT,x.x,A*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "RPM": {
+            "total_chars": 25,
+            "num_fields": 5,
+            "chars_per_field": [
+                1,
+                1,
+                3,
+                3,
+                1
+            ],
+            "field_names": [
+                "Source, S = Shaft, E = Engine",
+                "Engine or shaft number",
+                "Speed, Revolutions per minute",
+                "Propeller pitch, % of maximum, \"-\" means astern",
+                "Status, A = Valid, V = Invalid"
+            ],
+            "sentence_name": "Revolutions",
+            "sentence_structure": "$--RPM,a,x,x.x,x.x,A*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "RSA": {
+            "total_chars": 23,
+            "num_fields": 4,
+            "chars_per_field": [
+                3,
+                1,
+                3,
+                1
+            ],
+            "field_names": [
+                "Starboard (or single) rudder sensor, \"-\" means Turn To Port",
+                "Status, A = valid, V = Invalid",
+                "Port rudder sensor",
+                "Status, A = valid, V = Invalid"
+            ],
+            "sentence_name": "Rudder Sensor Angle",
+            "sentence_structure": "$--RSA,x.x,A,x.x,A*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "RSD": {
+            "total_chars": 59,
+            "num_fields": 13,
+            "chars_per_field": [
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                1,
+                1
+            ],
+            "field_names": [
+                "Origin 1 range",
+                "Origin 1 bearing",
+                "Variable Range Marker 1",
+                "Bearing Line 1",
+                "Origin 2 range",
+                "Origin 2 bearing",
+                "Variable Range Marker 2",
+                "Bearing Line 2",
+                "Cursor Range From Own Ship",
+                "Cursor Bearing Degrees Clockwise From Zero",
+                "Range Scale",
+                "Range Units",
+                "Display rotation (C = course up, H = heading up, N - North up)"
+            ],
+            "sentence_name": "RADAR System Data",
+            "sentence_structure": "$--RSD,x.x,x.x,x.x,x.x,x.x,x.x,x.x,x.x,x.x,x.x,x.x,a,a*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "RTE": {
+            "total_chars": 43,
+            "num_fields": 6,
+            "chars_per_field": [
+                3,
+                3,
+                1,
+                4,
+                4,
+                11
+            ],
+            "field_names": [
+                "Total number of RE sentences being transmitted",
+                "Sentence Number",
+                "Sentence mode c = complete route, all waypoints w = working route, the waypoint you just left, the waypoint you\u2019re heading to, then all the rest",
+                "Route ID",
+                "Waypoint ID",
+                "Additional waypoint IDs (1-99)"
+            ],
+            "sentence_name": "Routes",
+            "sentence_structure": "$--RTE,x.x,x.x,a,c--c,c--c, ..... c--c*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "SFI": {
+            "total_chars": 48,
+            "num_fields": 5,
+            "chars_per_field": [
+                3,
+                3,
+                6,
+                19,
+                1
+            ],
+            "field_names": [
+                "Total Number Of sentences",
+                "Sentence Number",
+                "Frequency 1",
+                "Mode 1",
+                "Additional Frequency, Mode pairs"
+            ],
+            "sentence_name": "Scanning Frequency Information",
+            "sentence_structure": "$--SFI,x.x,x.x,xxxxxx,c .......... xxxxxx,c*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "STN": {
+            "total_chars": 15,
+            "num_fields": 1,
+            "chars_per_field": [
+                3
+            ],
+            "field_names": [
+                "Talker ID Number"
+            ],
+            "sentence_name": "Multiple Data ID",
+            "sentence_structure": "$--STN,x.x*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "TDS": {
+            "total_chars": 17,
+            "num_fields": 2,
+            "chars_per_field": [
+                3,
+                1
+            ],
+            "field_names": [
+                "Distance between trawl doors",
+                "Meters (0-300)"
+            ],
+            "sentence_name": "Trawl Door Spread Distance",
+            "sentence_structure": "$--TDS,x.x,M*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "TFI": {
+            "total_chars": 17,
+            "num_fields": 3,
+            "chars_per_field": [
+                1,
+                1,
+                1
+            ],
+            "field_names": [
+                "Catch sensor #1 (0 = off, 1 = on, 2 = no answer)",
+                "Catch sensor #2 (0 = off, 1 = on, 2 = no answer)",
+                "Catch sensor #3 (0 = off, 1 = on, 2 = no answer)"
+            ],
+            "sentence_name": "Trawl Filling Indicator",
+            "sentence_structure": "$--TFI,x,y,z*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "TLB": {
+            "total_chars": 42,
+            "num_fields": 7,
+            "chars_per_field": [
+                3,
+                4,
+                3,
+                4,
+                3,
+                3,
+                4
+            ],
+            "field_names": [
+                "Target Number (0-99)",
+                "Label assigned to target",
+                "(Target number 2)",
+                "(Label assigned to target number 2)"
+            ],
+            "sentence_name": "Target Label",
+            "sentence_structure": "$--TLB,x.x,c--c,x.x,c--c,...,x.x,c--c*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "TLL": {
+            "total_chars": 54,
+            "num_fields": 9,
+            "chars_per_field": [
+                2,
+                7,
+                1,
+                8,
+                1,
+                4,
+                9,
+                1,
+                1
+            ],
+            "field_names": [
+                "Target Number (0-99)",
+                "Target Latitude, dd is degrees, mm.mm is minutes.",
+                "N=north, S=south",
+                "Target Longitude, dd is degrees, mm.mm is minutes.",
+                "E=east, W=west",
+                "Target name",
+                "UTC of data, hh is hours, mm is minutes, ss.ss is seconds.",
+                "Status (L=lost, Q=acquisition, T=tracking)",
+                "R= reference target; null (,,)= otherwise"
+            ],
+            "sentence_name": "Target Latitude and Longitude",
+            "sentence_structure": "$--TLL,xx,ddmm.mm,a,dddmm.mm,a,c--c,hhmmss.ss,a,a*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "TPC": {
+            "total_chars": 26,
+            "num_fields": 6,
+            "chars_per_field": [
+                1,
+                1,
+                1,
+                1,
+                3,
+                1
+            ],
+            "field_names": [
+                "Horizontal distance from the vessel center line",
+                "Meters",
+                "Horizontal distance from the transducer to the trawl along the vessel center line. The value is normally positive assuming the trawl is located behind the vessel.",
+                "Meters",
+                "Depth of the trawl below the surface",
+                "Meters"
+            ],
+            "sentence_name": "Trawl Position Cartesian Coordinates",
+            "sentence_structure": "$--TPC,x,M,y,P,z.z,M*hh,<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "TPR": {
+            "total_chars": 26,
+            "num_fields": 6,
+            "chars_per_field": [
+                1,
+                1,
+                1,
+                1,
+                3,
+                1
+            ],
+            "field_names": [
+                "Horizontal range relative to target",
+                "Meters (0-4000)",
+                "Bearing to target relative to vessel heading. Resolution is one degree.",
+                "Separator",
+                "Depth of trawl below the surface",
+                "Meters (0-2000)"
+            ],
+            "sentence_name": "Trawl Position Relative Vessel",
+            "sentence_structure": "$--TPR,x,M,y,P,z.z,M*hh,<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "TPT": {
+            "total_chars": 26,
+            "num_fields": 6,
+            "chars_per_field": [
+                1,
+                1,
+                1,
+                1,
+                3,
+                1
+            ],
+            "field_names": [
+                "Horizontal range relative to target",
+                "Meters (0-4000)",
+                "True bearing to target (ie. relative north). Resolution is one degree.",
+                "Separator",
+                "Depth of trawl below the surface",
+                "Meters (0-2000)"
+            ],
+            "sentence_name": "Trawl Position True",
+            "sentence_structure": "$--TPT,x,M,y,P,z.z,M*hh,<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "TRF": {
+            "total_chars": 71,
+            "num_fields": 12,
+            "chars_per_field": [
+                9,
+                6,
+                7,
+                1,
+                8,
+                1,
+                3,
+                3,
+                3,
+                3,
+                3,
+                1
+            ],
+            "field_names": [
+                "UTC of fix, hh is hours, mm is minutes, ss.ss is seconds.",
+                "Date, ddmmyy",
+                "Latitude, dd is degrees, mm.mm is minutes.",
+                "N or S",
+                "Longitude, dd is degrees, mm.mm is minutes.",
+                "E or W",
+                "Elevation Angle",
+                "Number of iterations",
+                "Number of Doppler intervals",
+                "Update distance, nautical miles",
+                "Satellite ID",
+                "Data Validity"
+            ],
+            "sentence_name": "TRANSIT Fix Data",
+            "sentence_structure": "$--TRF,hhmmss.ss,xxxxxx,ddmm.mm,a,dddmm.mm,a,x.x,x.x,x.x,x.x,xxx,A*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "TTM": {
+            "total_chars": 65,
+            "num_fields": 15,
+            "chars_per_field": [
+                2,
+                3,
+                3,
+                1,
+                3,
+                3,
+                1,
+                3,
+                3,
+                1,
+                4,
+                1,
+                1,
+                9,
+                1
+            ],
+            "field_names": [
+                "Target Number (0-99)",
+                "Target Distance",
+                "Bearing from own ship",
+                "Target Speed",
+                "Target Course",
+                "Distance of closest-point-of-approach",
+                "Time until closest-point-of-approach \"-\" means increasing",
+                "Speed/distance units, K/N",
+                "Target name",
+                "Target Status",
+                "Reference Target",
+                "UTC of data (NMEA 3 and above) hh is hours, mm is minutes, ss.ss is seconds.",
+                "Type, A = Auto, M = Manual, R = Reported (NMEA 3 and above)"
+            ],
+            "sentence_name": "Tracked Target Message",
+            "sentence_structure": "$--TTM,xx,x.x,x.x,a,x.x,x.x,a,x.x,x.x,a,c--c,a,a,hhmmss.ss,a*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "VBW": {
+            "total_chars": 43,
+            "num_fields": 10,
+            "chars_per_field": [
+                3,
+                3,
+                1,
+                3,
+                3,
+                1,
+                3,
+                1,
+                3,
+                1
+            ],
+            "field_names": [
+                "Longitudinal water speed, \"-\" means astern, knots",
+                "Transverse water speed, \"-\" means port, knots",
+                "Status, A = Data Valid",
+                "Longitudinal ground speed, \"-\" means astern, knots",
+                "Transverse ground speed, \"-\" means port, knots",
+                "Status, A = Data Valid",
+                "Stern traverse water speed, knots *NMEA 3 and above)",
+                "Status, stern traverse water speed A = Valid (NMEA 3 and above)",
+                "Stern traverse ground speed, knots *NMEA 3 and above)",
+                "Status, stern ground speed A = Valid (NMEA 3 and above)"
+            ],
+            "sentence_name": "Dual Ground/Water Speed",
+            "sentence_structure": "$--VBW,x.x,x.x,A,x.x,x.x,A,x.x,A,x.x,A*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "VDR": {
+            "total_chars": 29,
+            "num_fields": 6,
+            "chars_per_field": [
+                3,
+                1,
+                3,
+                1,
+                3,
+                1
+            ],
+            "field_names": [
+                "Direction degrees, True",
+                "Direction degrees Magnetic",
+                "Current speed, knots"
+            ],
+            "sentence_name": "Set and Drift",
+            "sentence_structure": "$--VDR,x.x,T,x.x,M,x.x,N*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "VHW": {
+            "total_chars": 35,
+            "num_fields": 8,
+            "chars_per_field": [
+                3,
+                1,
+                3,
+                1,
+                3,
+                1,
+                3,
+                1
+            ],
+            "field_names": [
+                "Heading degrees, True",
+                "Heading degrees, Magnetic",
+                "Speed of vessel relative to the water, knots",
+                "Speed of vessel relative to the water, km/hr"
+            ],
+            "sentence_name": "Water speed and heading",
+            "sentence_structure": "$--VHW,x.x,T,x.x,M,x.x,N,x.x,K*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "VLW": {
+            "total_chars": 35,
+            "num_fields": 8,
+            "chars_per_field": [
+                3,
+                1,
+                3,
+                1,
+                3,
+                1,
+                3,
+                1
+            ],
+            "field_names": [
+                "Total cumulative water distance, nm",
+                "Water distance since Reset, nm",
+                "Total cumulative ground distance, nm (NMEA 3 and above)",
+                "Ground distance since reset, nm (NMEA 3 and above)"
+            ],
+            "sentence_name": "Distance Traveled through Water",
+            "sentence_structure": "$--VLW,x.x,N,x.x,N,x.x,N,x.x,N*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "VPW": {
+            "total_chars": 23,
+            "num_fields": 4,
+            "chars_per_field": [
+                3,
+                1,
+                3,
+                1
+            ],
+            "field_names": [
+                "Speed, \"-\" means downwind, knots",
+                "Speed, \"-\" means downwind, m/s"
+            ],
+            "sentence_name": "Speed",
+            "sentence_structure": "$--VPW,x.x,N,x.x,M*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "VTG": {
+            "total_chars": 42,
+            "num_fields": 9,
+            "chars_per_field": [
+                3,
+                1,
+                3,
+                1,
+                3,
+                1,
+                3,
+                1,
+                1
+            ],
+            "field_names": [
+                "Course Over Ground True",
+                "T",
+                "Course Over Ground Magnetic",
+                "M",
+                "Speed Over Ground Knots",
+                "N",
+                "Speed Over Ground KPH",
+                "K",
+                "Mode"
+            ],
+            "sentence_name": "Course Over Ground and Ground Speed",
+            "sentence_structure": "$--VTG,x.x,T,x.x,M,x.x,N,x.x,K,m*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "VWR": {
+            "total_chars": 35,
+            "num_fields": 8,
+            "chars_per_field": [
+                3,
+                1,
+                3,
+                1,
+                3,
+                1,
+                3,
+                1
+            ],
+            "field_names": [
+                "Wind direction magnitude in degrees",
+                "Wind direction Left/Right of bow",
+                "Speed",
+                "Speed",
+                "Speed"
+            ],
+            "sentence_name": "Relative Wind Speed and Angle",
+            "sentence_structure": "$--VWR,x.x,a,x.x,N,x.x,M,x.x,K*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "WCV": {
+            "total_chars": 24,
+            "num_fields": 4,
+            "chars_per_field": [
+                3,
+                1,
+                4,
+                1
+            ],
+            "field_names": [
+                "Velocity, knots",
+                "Waypoint ID",
+                "FAA Mode indicator, not null (NMEA 3 and above)"
+            ],
+            "sentence_name": "Waypoint Closure Velocity",
+            "sentence_structure": "$--WCV,x.x,N,c--c,a*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "WNC": {
+            "total_chars": 33,
+            "num_fields": 6,
+            "chars_per_field": [
+                3,
+                1,
+                3,
+                1,
+                4,
+                4
+            ],
+            "field_names": [
+                "Distance, Nautical Miles",
+                "Distance, Kilometers",
+                "TO Waypoint",
+                "FROM Waypoint"
+            ],
+            "sentence_name": "Distance",
+            "sentence_structure": "$--WNC,x.x,N,x.x,K,c--c,c--c*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "WPL": {
+            "total_chars": 37,
+            "num_fields": 5,
+            "chars_per_field": [
+                7,
+                1,
+                8,
+                1,
+                4
+            ],
+            "field_names": [
+                "Latitude",
+                "N or S (North or South)",
+                "Longitude",
+                "E or W (East or West)",
+                "Waypoint name"
+            ],
+            "sentence_name": "Waypoint Location",
+            "sentence_structure": "$--WPL,llll.ll,a,yyyyy.yy,a,c--c*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "XDR": {
+            "total_chars": 32,
+            "num_fields": 5,
+            "chars_per_field": [
+                1,
+                3,
+                1,
+                4,
+                7
+            ],
+            "field_names": [
+                "Transducer Type",
+                "Measurement Data",
+                "Units of measurement A = Amperes B = Bars B = Binary C = Celsius D = Degrees H = Hertz I = liters/second K = Kelvin K = kg/m3 M = Meters M = cubic Meters N = Newton P = % of full range P = Pascal R = RPM S = Parts per thousand V = Volts",
+                "Name of transducer"
+            ],
+            "sentence_name": "Transducer Measurement",
+            "sentence_structure": "$--XDR,a,x.x,a,c--c, ..... *hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "XTE": {
+            "total_chars": 25,
+            "num_fields": 6,
+            "chars_per_field": [
+                1,
+                1,
+                3,
+                1,
+                1,
+                1
+            ],
+            "field_names": [
+                "Status",
+                "A - Valid",
+                "V = Loran-C Blink or SNR warning",
+                "V = general warning flag or other navigation systems when a reliable fix is not available",
+                "Status",
+                "V = Loran-C Cycle Lock warning flag",
+                "A = Valid",
+                "Cross Track Error Magnitude",
+                "Direction to steer, L or R",
+                "Cross Track Units, N = Nautical Miles",
+                "FAA mode indicator (NMEA 2.3 and later, optional)"
+            ],
+            "sentence_name": "Cross-Track Error, Measured",
+            "sentence_structure": "$--XTE,A,A,x.x,a,N,m*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "XTR": {
+            "total_chars": 19,
+            "num_fields": 3,
+            "chars_per_field": [
+                3,
+                1,
+                1
+            ],
+            "field_names": [
+                "Magnitude of cross track error",
+                "Direction to steer, L or R",
+                "Units, N = Nautical Miles"
+            ],
+            "sentence_name": "Cross Track Error",
+            "sentence_structure": "$--XTR,x.x,a,N*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "ZDA": {
+            "total_chars": 38,
+            "num_fields": 6,
+            "chars_per_field": [
+                9,
+                2,
+                2,
+                4,
+                2,
+                2
+            ],
+            "field_names": [
+                "UTC time (hours, minutes, seconds, may have fractional subseconds)",
+                "Day, 01 to 31",
+                "Month, 01 to 12",
+                "Year (4 digits)",
+                "Local zone description, 00 to +- 13 hours",
+                "Local zone minutes description, 00 to 59, apply same sign as local hours"
+            ],
+            "sentence_name": "Time & Date",
+            "sentence_structure": "$--ZDA,hhmmss.ss,xx,xx,xxxx,xx,xx*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "ZFO": {
+            "total_chars": 36,
+            "num_fields": 3,
+            "chars_per_field": [
+                9,
+                9,
+                4
+            ],
+            "field_names": [
+                "Universal Time Coordinated (UTC) hh is hours, mm is minutes, ss.ss is seconds.",
+                "Elapsed Time",
+                "Origin Waypoint ID"
+            ],
+            "sentence_name": "UTC & Time from origin Waypoint",
+            "sentence_structure": "$--ZFO,hhmmss.ss,hhmmss.ss,c--c*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        },
+        "ZTG": {
+            "total_chars": 36,
+            "num_fields": 3,
+            "chars_per_field": [
+                9,
+                9,
+                4
+            ],
+            "field_names": [
+                "UTC of observation hh is hours, mm is minutes, ss.ss is seconds.",
+                "Time Remaining",
+                "Destination Waypoint ID"
+            ],
+            "sentence_name": "UTC & Time to Destination Waypoint",
+            "sentence_structure": "$--ZTG,hhmmss.ss,hhmmss.ss,c--c*hh<CR><LF>",
+            "standard": "N",
+            "version": {
+                "nmea": [
+                    "2.00",
+                    "2.30"
+                ],
+                "iec": []
+            }
+        }
+    }
+}
